@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.map-container,
+.loading,
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.popup .icon {
+  height: 1.5em;
+  display: inline;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+.popup .place-name {
+  font-weight: 700;
+  font-size: 1.5em;
+  display: inline;
+}
+
+.popup .address {
+  margin-top: 10px;
+}
+
+.popup .photo {
+  margin-top: 10px;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+}
+
+.sidebar input {
+  line-height: 1.5em;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  width: calc(100% - 20px);
+}
+
+.sidebar ul {
+  
+  list-style-type: none;
+  margin-left: -40px;
+
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+.sidebar a {
+
+}
