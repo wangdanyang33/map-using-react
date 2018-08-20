@@ -8,6 +8,10 @@ How to Run App:
 3. lanch the app with command "npm start"
 a new browser window will open automaticlly displaying this app.
 
+How to Run App in Production Mode:
+1. Use command `npm run build`
+                `serve -s build`
+2. navigate to http://localhost:5000/
 Technology used:
 React
 HTML

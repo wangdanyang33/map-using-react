@@ -17,7 +17,7 @@ class Sidebar extends Component {
     }
     render() {
         return (
-            <div className="sidebar">
+            <div className="sidebar" role="sidebar" aria-lable="sidebar">
                 <h1>My Favorite Places</h1>
                 <input onChange={this.updateFilter} />
                 <ul>

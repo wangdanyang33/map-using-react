@@ -29,10 +29,12 @@ class PopupInfo extends Component {
                                 this.setState({foursquare_id: data.response.venues[0].id})
                             }
                         })
+                    } else {
+                        this.setState({ errorMessage: 'Foursquare API error. Please try again later.' })
                     }
                 })
             } else {
-                this.setState({ status: 'error' })
+                this.setState({ errorMessage: 'Google API error. Please try again later.' })
             }
         })
         
@@ -53,11 +55,11 @@ class PopupInfo extends Component {
                     </div>
                 </InfoWindow>
             )
-        } else if (this.state.error) {
+        } else if (this.state.errorMessage) {
             return (
                 <InfoWindow onCloseClick={this.props.onCloseClick}>
                     <div>
-                        Google API error. Please try again later.
+                        {this.state.errorMessage}
                     </div>
                 </InfoWindow>
             )
